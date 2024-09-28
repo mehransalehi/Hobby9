@@ -1,0 +1,43 @@
+.roundc(@radius: 10px){
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+.gradient (@start: black, @stop: white,@origin: left) {
+	background-color: @start;
+	background-image: -webkit-linear-gradient(@origin, @start,
+	@stop);
+	background-image: -moz-linear-gradient(@origin, @start,
+	@stop);
+	background-image: -o-linear-gradient(@origin, @start, @stop);
+	background-image: -ms-linear-gradient(@origin, @start, @stop);
+	background-image: linear-gradient(@origin, @start, @stop);
+}
+.transition (@prop: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
+.fa(){
+	direction:rtl;
+}
+.hrCode(@color,@margin:10px) {
+    border: 0;
+    height: 1px;
+    clear:both;
+    margin:@margin auto;
+   /* IE10 Consumer Preview */
+		background-image: -ms-linear-gradient(left, transparent  0%, @color 50%, transparent  100%);
+		/* Mozilla Firefox */
+		background-image: -moz-linear-gradient(left, transparent  0%, @color 50%, transparent  100%);
+		/* Opera */
+		background-image: -o-linear-gradient(left, transparent  0%, @color 50%, transparent  100%);
+		/* Webkit (Safari/Chrome 10) */
+		background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent ), color-stop(0.5, @color), color-stop(1, transparent ));
+		/* Webkit (Chrome 11+) */
+		background-image: -webkit-linear-gradient(left, transparent  0%, @color 50%, transparent  100%);
+		/* W3C Markup, IE10 Release Preview */
+		background-image: linear-gradient(to right, transparent  0%, @color 50%, transparent  100%);
+}

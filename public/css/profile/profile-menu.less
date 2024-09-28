@@ -1,0 +1,316 @@
+.col-md-2{
+	.make-md-column(2);
+}
+.menu-content{
+	height:auto;
+	background-color:@my-profile-dark-color;
+	border-right:1px solid @legend-border-color;
+	float:right;
+	@media(max-width:991px){
+		display:none;
+	}
+}
+.btn-upload-menu{
+	height:60px;
+	width:100%;
+	background-color:@main-color;
+	color:white;
+	.roundc(3px);
+	cursor:pointer;
+}
+.btn-upload-menu div{
+	text-align: center;
+  font-size: 25px;
+  padding: 6px 0px;
+  border: 2px dashed white;
+  width: 70%;
+  margin: 0px auto;
+  position: relative;
+  top: 8px;
+}
+.menu-items{
+	font-size:13px;
+	text-align:right;
+	color:@my-profile-menu-color;
+	margin-top:20px;
+	padding:0 5px;
+}
+.menu-items li{
+	margin:6px 0;
+}
+.menu-items h2{
+	font-size:16px;
+	margin:10px 0;
+}
+.menu-items a{
+	color:@my-profile-menu-color;
+	font-size:14px;
+}
+.menu-items a:hover{
+	color:lighten(@my-profile-menu-color,15%);
+}
+.menu-items a:hover i{
+	color:@main-color;
+}
+.menu-items-active{
+	color:@main-color;
+}
+.menu-items span{
+	top:2px
+}
+hr.red {
+    border: 0;
+    height: 1px;
+    clear:both;
+    margin:4px auto;
+
+		   /* IE10 Consumer Preview */
+		background-image: -ms-linear-gradient(left, #1B2224 0%, #DB5B5B 50%, #1B2224 100%);
+
+		/* Mozilla Firefox */
+		background-image: -moz-linear-gradient(left, #1B2224 0%, #DB5B5B 50%, #1B2224 100%);
+
+		/* Opera */
+		background-image: -o-linear-gradient(left, #1B2224 0%, #DB5B5B 50%, #1B2224 100%);
+
+		/* Webkit (Safari/Chrome 10) */
+		background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1B2224), color-stop(0.5, #DB5B5B), color-stop(1, #1B2224));
+
+		/* Webkit (Chrome 11+) */
+		background-image: -webkit-linear-gradient(left, #1B2224 0%, #DB5B5B 50%, #1B2224 100%);
+
+		/* W3C Markup, IE10 Release Preview */
+		background-image: linear-gradient(to right, #1B2224 0%, #DB5B5B 50%, #1B2224 100%);
+}
+hr.white {
+    border: 0;
+    height: 1px;
+    clear:both;
+    margin:4px auto;
+
+    /* IE10 Consumer Preview */
+		background-image: -ms-linear-gradient(left, #1B2224 0%, @main-color 50%, #1B2224 100%);
+
+		/* Mozilla Firefox */
+		background-image: -moz-linear-gradient(left, #1B2224 0%, @main-color 50%, #1B2224 100%);
+
+		/* Opera */
+		background-image: -o-linear-gradient(left, #1B2224 0%, @main-color 50%, #1B2224 100%);
+
+		/* Webkit (Safari/Chrome 10) */
+		background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1B2224), color-stop(0.5, @main-color), color-stop(1, #1B2224));
+
+		/* Webkit (Chrome 11+) */
+		background-image: -webkit-linear-gradient(left, #1B2224 0%, @main-color 50%, #1B2224 100%);
+
+		/* W3C Markup, IE10 Release Preview */
+		background-image: linear-gradient(to right, #1B2224 0%, @main-color 50%, #1B2224 100%);
+}
+.row{
+    &:extend(.row all);
+}
+.main-div{
+	height:100%;
+}
+.navbar-profile{
+	height:40px;
+	background-color:@my-profile-dark-color;
+	border-left:1px solid @legend-border-color;
+	border-right:1px solid @legend-border-color;
+	direction: rtl;
+}
+.col-md-10{
+	.make-md-column(10);
+}
+.col-md-12
+{
+	.make-md-column(12);
+}
+#sticker{
+	padding:0 !important;
+  margin: 0 auto;
+}
+.profile-content{
+  padding: 10px 15px;
+	border-top:1px solid @legend-border-color;
+	border-left:1px solid @legend-border-color;
+	border-right:1px solid @legend-border-color;
+	width: 100%;
+}
+.user-name-navbar{
+	float:right;
+	color:white;
+}
+.user-name-navbar img{
+	float: right;
+	margin: 3px;
+	border-radius: 10px;
+}
+.user-name-navbar p{
+	float: right;
+	line-height: 16px;
+	padding: 12px 10px;
+	font-size: 12px;
+}
+.user-name-navbar a{
+	color:white;
+}
+.user-name-navbar a:hover{
+	color:#aaa;
+}
+.search-profile-box{
+	width:200px;
+	height:40px;
+	float:left;
+}
+.container-search{
+	width:200px;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+}
+.container-search i{
+	position:absolute;
+	right: 180px;
+	font-size: 12px;
+}
+.container-search input#search{
+	text-align:right;
+	direction:rtl;
+	width: 200px;
+	height: 30px;
+	background: white;
+	border: none;
+	font-size: 10pt;
+	float: left;
+	color: black;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-top: 6px;
+  margin-left: 3px;
+}
+.container-search .icon-search{
+	position: absolute;
+	top: 40%;
+	margin-left: 9px;
+	margin-top: 16px;
+	z-index: 1;
+	color: #4f5b66;
+}
+.container-search input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+}
+.recive-msg{
+	height: 40px;
+	width: 50px;
+	color: white;
+	float: left;
+	position: relative;
+	top: 7px;
+	cursor:pointer;
+	@media(max-width:700px){
+		display:none;
+	}
+}
+.recive-msg a{
+	color:white;
+	font-size: 25px;
+}
+.recive-msg a:hover{
+	color:#aaa;
+}
+.num-new-msg{
+	position: absolute;
+	background-color: red;
+	color: black;
+	font-size: 12px;
+	right: 0;
+	top: -2px;
+	.roundc(3px);
+}
+hr.gray {
+    border: 0;
+    height: 1px;
+    clear:both;
+    margin:4px auto;
+
+    /* IE10 Consumer Preview */
+background-image: -ms-linear-gradient(left, #FFFFFF 0%, #1B2224 50%, #FFFFFF 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(left, #FFFFFF 0%, #1B2224 50%, #FFFFFF 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(left, #FFFFFF 0%, #1B2224 50%, #FFFFFF 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFFFFF), color-stop(0.5, #1B2224), color-stop(1, #FFFFFF));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(left, #FFFFFF 0%, #1B2224 50%, #FFFFFF 100%);
+
+/* W3C Markup, IE10 Release Preview */
+background-image: linear-gradient(to right, #FFFFFF 0%, #1B2224 50%, #FFFFFF 100%);
+}
+.upper-staff{
+	height:30px;
+	width:100%;
+}
+.select-icons{
+	padding:5px;
+}
+.select-icons a{
+	color:#e1e1e1;
+	margin-left:10px;
+	float:left;
+	font-size:20px;
+}
+.select-icons a:hover{
+	color:@main-color;
+}
+.paginator{
+	margin:10px auto;
+	clear:both;
+	float:left;
+	direction:rtl;
+	width:100%;
+}
+.paginator a{
+	font-size:10px !important;
+}
+.well{
+    .well();
+    text-align:right;
+    direction:rtl;
+    font-size:12px;
+}
+.well a{
+    color:@my-link-color;
+}
+.well-sm{
+    .well-sm();
+}
+.stick {
+    position:fixed;
+    top:100px;
+}
+.active-key{
+	color:@main-color !important;
+}
+.stickem-container {
+  position: relative;
+}
+
+.stickit {
+    margin-left: 660px;
+    position: fixed;
+    top: 0;
+}
+
+.stickit-end {
+    bottom: 40px;
+    position: absolute;
+    right: 0;
+}

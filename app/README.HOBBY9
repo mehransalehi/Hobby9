@@ -1,0 +1,69 @@
+#In tbl_classes we add one column for remember_token
+
+#In tbl_classes we change password hash algiritm
+--------> we should ask user to set new password in first login to change all user password in new algoritm
+
+#In tbl_classes some email enterd twice and we delete them for adding uniqu flag for email column
+--------> we should check which of this account have thayer file and delete another one
+
+#In tbl_classes all of the username(owner) must be in lowercase check that.
+
+#Some url of application may be changed so you should redirect old url to new one or redirect to 404 .
+
+#In show media page we need to all DOWNLOAD Key near the mp3 pic
+
+#In show media for pdf or ebook need to put iframe.
+
+#In RecordClass we use a custom disk to save medias that we should put bellow declration in config/filesystem.php file :
+
+              'media' => [
+                  'driver' => 'local',
+                  'root' => storage_path('app/public/media'),
+                  'url' => env('APP_URL').'/dl',
+                  'visibility' => 'public',
+              ],
+
+#we add uniuq key on user,type,target in tbl_follow class we should reput all data in this table also add id column.
+
+#in comments table chaneg user to user_hash
+
+#we should make cronjob to delete past day symlink record for visiting number of meidas.
+
+#in comment table we change user to user_hash
+
+#in tbl_user_setting we change user to user_hash
+
+#We have problem with not found page  and undefin prpperty or variables in views take care of them.
+
+# add id column to tbl_user-setting
+
+# add id column to tbl_recovery
+
+#we need to set a cron to delete tmp folder in strorage dir and if there is a symbolic link for them delete theme too
+#############################POINTS#################################
+
+1- To use laravel function updateOrCreate you need auto increment id in your table.
+2- There are some media that not have any user thay must be remove :
+---->  DELETE FROM `tbl_files` WHERE class not in (select hash from tbl_classes);
+3- MP3 thumbnail must be at height 150px . Then pust new default thumbnail for MP3 file with height 150px.
+
+
+
+####################################################################
+
+ispublished
+  1 = normal
+  2 = uploaded but detail not enterd
+  3 = file in convert queue but user edited the details
+  4 = deleted
+  5 = special pages
+  21,22,7 = telegram
+  9 = Uploaded from webmaster downloader
+
+
+#####################################################################
+
+#BE creaful in debian base when run a process with nohup . this nohup add 1 to it's pid and run inside commadn with that pid
+#BUUUUUT in cent os not like that and first pid return with "echo &!" is the inside pid
+
+we use pid return with shell_exec in radio config command line.

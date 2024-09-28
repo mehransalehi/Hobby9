@@ -1,0 +1,73 @@
+// out: ./branch.css, sourcemap: false, compress: true
+
+@import "./../header.less";
+@import "./profile-menu.less";
+
+.table{
+	&:extend(.table all);
+	font-size:16px;
+}
+.table-bordred{
+	&:extend(.table-bordred all);
+}
+.table-striped{
+	&:extend(.table-striped all);
+}
+.table tr{
+	direction:rtl;
+}
+.table td{
+	direction:rtl;
+	text-align:center;
+	font-size:12px;
+}
+.table td a:hover{
+	color:@my-btn-upload;
+}
+.table td a{
+	color:black;
+	font-size:12px;
+}
+.trash-ico{
+	&:extend(.glyphicon-trash all);
+}
+.pencil-ico{
+	&:extend(.glyphicon-pencil all);
+}
+.btn-xs{
+	&:extend(.btn-xs);
+}
+.form-group{
+	.form-group();
+}
+.form-control{
+	.form-control();
+}
+.branch-form{
+	padding:20px;
+	float:right;
+	width:50%;
+	direction:rtl;
+	font-size:12px;
+	@media(max-width:740px)
+	{
+		width:100%;
+	}
+}
+.branch-form h2{
+	text-align:right;
+	padding:20px 0;
+	color:@my-profile-menu-color;
+	font-size:12px;
+}
+.well-msg{
+	padding:10px;
+	margin:10px auto;
+}
+.well{
+	margin:5px;
+}
+#edit-branch:hover{
+	cursor:pointer;
+	color:@my-btn-upload;
+}

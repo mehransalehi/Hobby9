@@ -1,0 +1,126 @@
+// out: ./index.css, sourcemap: false, compress: true
+
+@import "./header.less";
+
+.col-xs-12{
+  .make-xs-column(12);
+}
+.col-md-5{
+  .make-md-column(2.4);
+  float:right !important;
+}
+.info-panel>div{
+  height:120px;
+  margin: 10px auto;
+}
+
+
+
+
+.user-count{
+  border:1px solid darken(#C0392B,20%);
+}
+.user-count .top-info-panel{
+  background: #C0392B;
+}
+
+.reg-count{
+  border:1px solid darken(#eea303,20%);
+}
+.reg-count .top-info-panel{
+  background: #eea303;
+}
+
+.feed-count{
+  border:1px solid darken(#f06060,20%);
+}
+.feed-count .top-info-panel{
+  background: #f06060;
+}
+
+.file-count{
+  border:1px solid darken(#0e83cd,20%);
+}
+.file-count .top-info-panel{
+  background: #0e83cd;
+}
+
+.del-count{
+  border:1px solid darken(#702fa8,20%);
+}
+.del-count .top-info-panel{
+  background: #702fa8;
+}
+
+.video-count{
+  border:1px solid darken(#41ab6b,20%);
+}
+.video-count .top-info-panel{
+  background: #41ab6b;
+}
+
+.music-count{
+  border:1px solid darken(#96a94b,20%);
+}
+.music-count .top-info-panel{
+  background: #96a94b;
+}
+
+.book-count{
+  border:1px solid darken(#3851bc,20%);
+}
+.book-count .top-info-panel{
+  background: #3851bc;
+}
+
+.new-file-count{
+  border:1px solid darken(#7bb7fa,20%);
+}
+.new-file-count .top-info-panel{
+  background: #7bb7fa;
+}
+
+
+
+
+.top-info-panel{
+  position:relative;
+  height:70%;
+}
+.top-info-panel .fa{
+  float: left;
+  font-size: 50px;
+  padding: 16px;
+  color: white;
+}
+.top-info-panel .info-on-top{
+  color: white;
+  float: right;
+}
+.top-info-panel .num-in-top{
+  font-size: 40px;
+  padding: 10px 16px;
+}
+.top-info-panel .info-text{
+    padding: 0 20px;
+}
+.bot-info-panel{
+  position:relative;
+  height:30%;
+  padding: 8px;
+  font-size: 12px;
+}
+.bot-info-panel a{
+  direction: rtl;
+  width:100%;
+  color:black;
+}
+.bot-info-panel a:hover{
+  color:gray;
+}
+.bot-info-panel a>span{
+  float:right;
+}
+.bot-info-panel a>.fa{
+  float:left;
+}

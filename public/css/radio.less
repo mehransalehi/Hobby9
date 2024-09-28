@@ -1,0 +1,375 @@
+// out: ./radio.css, sourcemap: false, compress: true
+@import "cssreset.less";
+@import "basics.less";
+@import "variables.less";
+@import (reference) "./less/bootstrap.less";
+@import "./less/variables.less";
+@import (reference) "mixins.less";
+@import (reference) "./less/grid.less";
+@import "./less/tooltip.less";
+.container{
+    &:extend(.container);
+}
+.container::after{
+  display:block;
+  content: "";
+  clear:both;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.form-control{
+    .form-control();
+}
+.clear{
+  clear:both;
+}
+header{
+  height:60px;
+  background: rgba(73,155,234,1);
+background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 53%, rgba(32,124,229,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(53%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 53%, rgba(32,124,229,1) 100%);
+background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 53%, rgba(32,124,229,1) 100%);
+background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 53%, rgba(32,124,229,1) 100%);
+background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 53%, rgba(32,124,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );
+  border-bottom:2px solid #12598d;
+  border-top:1px solid rgba(255, 255, 255, .7);
+  box-shadow: 0 1px 1px 0 rgba(255,255,255,0.2),0 1px 80px 0 rgba(255,255,255,0.19),inset 1px 1px 1px 1px rgba(22,101,162,0.9);
+}
+header input{
+  direction:rtl;
+  background-color:#1977c1 !important;
+  width:200px;
+  margin:10px;
+  border:none;
+  border-radius:3px;
+  padding:5px;
+  height:35px;
+  color:white;
+  box-shadow: 0 1px 1px 0 rgba(255,255,255,0.2),0 1px 80px 0 rgba(255,255,255,0.19),inset 1px 1px 1px 1px rgba(22,101,162,0.9);
+}
+.header-left{
+  float:left;
+}
+.header-left form{
+  float:left;
+}
+.header-right{
+  float:right;
+}
+.col-md-4{
+  .make-md-column(4);
+}
+.col-md-8{
+  .make-md-column(8);
+}
+sidebar{
+}
+.content-music{
+}
+/* .fa{
+  color:transparent !important;
+  background-color:rgba(22,101,162,0.9) !important;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.2),0 1px 80px rgba(255,255,255,0.19);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+  float:left;
+  font-size:30px!important;
+  margin:10px;
+}*/
+#main{
+  background-color: #f0f2f1;
+  border-right: 1px solid #cbcbcb;
+  border-left: 1px solid #cbcbcb;
+}
+.online-radio{
+  border-bottom:1px solid #cdcdcd;
+  height:150px;
+  box-shadow: 0 1px 0 0 #fff;
+  padding: 18px;
+}
+.microphone{
+  height:108px;
+  width:108px;
+  .img-thumbnail();
+  float:left;
+}
+.online-radio h1{
+  float: left;
+  font-size: 30px;
+  margin: 3px;
+  color:rgba(22,101,162,0.9) !important;
+  text-shadow: 0 2px 1px rgba(200,200,200,1.3);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+.current-music,.learning  {
+  border-bottom:1px solid #cdcdcd;
+  box-shadow: 0 1px 0 0 #fff;
+  padding: auto 18px;
+}
+.current-music::after,.learning::after ,.other::after {
+  display:block;
+  content: "";
+  clear:both;
+}
+.current-music h2{
+  color:#a4a4a4;
+  font-size: 14px;
+  direction: rtl;
+  padding: 10px;
+  text-shadow: 1px 1px 0 rgba(255,255,255,1);
+}
+.current-music-list li{
+  float:right;
+  clear:both;
+  margin: 5px;
+  direction:rtl;
+}
+.current-music-list li img{
+  height:54px;
+  width:54px;
+  .img-thumbnail();
+  float:right;
+}
+.cu-music-info{
+  color:#666666;
+  padding: 5px;
+  font-size: 10px;
+  float:right;
+}
+.cu-music-info h3{
+  clear:both;
+  text-align:right;
+}
+.cu-music-info .fa{
+  color:#c1c1c1 !important;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+  float:right;
+  font-size:22px!important;
+  margin:10px;
+  transition: all .5s;
+  cursor: pointer;
+}
+.cu-music-info .fa:hover{
+  color:#919191 !important;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+.learning h2,.other h2{
+  color:#a4a4a4;
+  font-size: 14px;
+  direction: rtl;
+  padding: 10px;
+  text-shadow: 1px 1px 0 rgba(255,255,255,1);
+}
+.learning .fa{
+  color:#c1c1c1 !important;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+  float:right;
+  font-size:22px!important;
+  margin:10px;
+  transition: all .5s;
+  cursor: pointer;
+}
+.learning .fa:hover{
+  color:#919191 !important;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+.other a{
+  float:right;
+  color:#666666;
+  padding:10px;
+  font-size:12px;
+  text-shadow: 0px 1px 1px rgba(255,255,255,1);
+}
+.other a:hover{
+  color:#c1c1c1;
+}
+.content-head{
+  margin-top:20px;
+  border:1px solid #a5a5a5;
+  background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+padding: 20px;
+text-align: right;
+color: #666666;
+font-size: 14px;
+box-shadow: 0 1px 1px 0 rgba(255,255,255,0.2),0 0px 2px 0 rgba(255,255,255,0.19),inset 0px 1px 2px 0px rgba(255,255,255,0.9);
+}
+.new-music{
+  background-color:white;
+  border : 1px solid #cbcbcb;
+  font-size: 0;
+}
+.each-media-item{
+    .make-xs-column(3);
+    position:relative;
+    margin:10px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float:none !important;
+    vertical-align: top;
+    display: inline-block;
+    font-size:12px;
+}
+.img-responsive{
+    .img-responsive();
+}
+.each-media-thumb{
+  width:100%;
+  .img-thumbnail();
+}
+.each-media-item .text{
+  text-align: center;
+  padding: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction:rtl;
+}
+.btn:extend(.btn all){}
+
+.btn-info{
+    &:extend(.btn-info all);
+    width:50%;
+}
+.btn-group{
+  margin:5px auto;
+  width:100%;
+  &:extend(.btn-group all);
+}
+.btn-group-xs{
+    &:extend(.btn-group-xs all);
+}
+.each-media-item a{
+  font-size: 10px;
+}
+.each-media-item a .fa{
+  margin: auto 5px;
+}
+
+.tags a{
+  background-color: rgba(0,76,93,0.95);
+  border: 1px solid #02547b;
+  color: white;
+  padding: 6px 10px;
+  direction: rtl;
+  float: right;
+  display: block;
+  margin: 5px;
+  font-size:14px;
+}
+
+.bar-c {
+  overflow: hidden;
+  height: 30px;
+  width: 40px;
+  margin: 10px;
+  position: relative;
+  cursor:pointer;
+  float:left;
+}
+.bar {
+  height: 1px;
+  width: 3px;
+  display: inline-block;
+  background-color: rgba(22,101,162,0.9);
+  bottom: 0;
+  position: absolute;
+
+  &.noAnim {
+    -webkit-animation: none;
+    -webkit-animation-name: none;
+  }
+
+  &#bar-1 {
+    left: 0;
+    -webkit-animation-name: danceHeight1;
+    -webkit-animation-delay: 0ms;
+  }
+  &#bar-2 {
+    left: 6px;
+    -webkit-animation-name: danceHeight2;
+    -webkit-animation-delay: 300ms;
+  }
+  &#bar-3 {
+    left: 12px;
+    -webkit-animation-name: danceHeight3;
+    -webkit-animation-delay: 600ms;
+  }
+  &#bar-4 {
+    left: 18px;
+    -webkit-animation-name: danceHeight4;
+    -webkit-animation-delay: 900ms;
+  }
+  &#bar-5 {
+    left: 24px;
+    -webkit-animation-name: danceHeight5;
+    -webkit-animation-delay: 1200ms;
+  }
+  &#bar-6 {
+    left: 30px;
+    -webkit-animation-name: danceHeight6;
+    -webkit-animation-delay: 1500ms;
+  }
+
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-play-state: running;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes danceHeight1 {
+  from { height: 1px; }
+  to { height: 22px; }
+}
+@-webkit-keyframes danceHeight2 {
+  from { height: 1px; }
+  to { height: 15px; }
+}
+@-webkit-keyframes danceHeight3 {
+  from { height: 1px; }
+  to { height: 30px; }
+}
+@-webkit-keyframes danceHeight4 {
+  from { height: 1px; }
+  to { height: 20px; }
+}
+@-webkit-keyframes danceHeight5 {
+  from { height: 1px; }
+  to { height: 15px; }
+}
+@-webkit-keyframes danceHeight6 {
+  from { height: 1px; }
+  to { height: 15px; }
+}
+
+.arrow-icon{
+  position: relative;
+top: 10px;
+line-height: 31px !important;
+padding: 0 0 0 10px;
+font-size: 20px !important;
+color: white;
+cursor: pointer;
+left: 36px;
+float: left;
+}

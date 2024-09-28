@@ -1,0 +1,145 @@
+// out: ./filemanager.css, sourcemap: false, compress: true
+
+@import "./header.less";
+@import "./../pagination.less";
+.table{
+	&:extend(.table all);
+	font-size:15px;
+}
+.table-bordred{
+	&:extend(.table-bordred all);
+}
+.table-striped{
+	&:extend(.table-striped all);
+}
+.col-md-5{
+  .make-md-column(2.4);
+  float:right !important;
+}
+.col-sm-5{
+  .make-sm-column(2.4);
+  float:right !important;
+}
+.col-md-6{
+  .make-md-column(6);
+  float:right !important;
+}
+.col-lg-6{
+  .make-lg-column(6);
+  float:right !important;
+}
+.btn-ord{
+	margin:5px;
+}
+.table tr{
+	direction:rtl;
+  text-align:center;
+}
+.table td{
+	direction:rtl;
+	text-align:right;
+  font-size:15px;
+  text-align:center;
+}
+.table th{
+  text-align:center;
+}
+.table a{
+  font-size:15px;
+  cursor:pointer;
+  text-align:center;
+}
+.table th:last-child *{
+	float:right;
+}
+.table td a:hover{
+	color:@main-color;
+}
+.table td a{
+	color:black;
+}
+.col-sm-2{
+	.make-sm-column(2);
+	float:right !important;
+}
+.top-page-elem{
+	width:100px;
+	height:100px;
+	border:1px solid gray;
+	background-color:#eee;
+	text-align:center;
+}
+.top-page-icon:before {
+    position: relative;
+    top: 10px;
+}
+.top-page-icon {
+    font-size: 30px !important;
+    padding: 0 0 10px 0 !important;
+}
+.top-page-text {
+    text-align: center;
+    font-size: 16px;
+}
+.spacer{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.well{
+	&:extend(.well);
+}
+#text{
+	height:200px;
+}
+.radio{
+	float:right;
+    margin: 20px 39px !important;
+}
+.color-info>div{
+	margin:0 !important;
+	text-align:center;
+	padding:5px;
+}
+.form-group label{
+	.make-sm-column(3);
+	line-height: 34px;
+	font-size:12px;
+	text-align:right;
+  float:right !important;
+}
+.form-group input[type="checkbox"]{
+	width:20px;
+	height:20px;
+}
+.requird-field{
+	&:extend(.has-error all);
+}
+.form-content-1 {
+    padding-left: 80px;
+    float: right;
+}
+.form-content-2 {
+    border-right: 1px solid #e3e3e3;
+    float: left;
+    padding-right: 80px;
+}
+.col-xs-12{
+	.make-xs-column(12);
+}
+.title-td{
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+	max-width: 350px;
+}
+.title-td a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.well{
+	clear:both;
+}

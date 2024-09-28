@@ -1,0 +1,190 @@
+// out: ./message.css, sourcemap: false, compress: true
+
+@import "./../header.less";
+@import "./profile-menu.less";
+.col-xs-12{
+    .make-xs-column(12);
+}
+.col-md-6{
+    .make-md-column(6);
+}
+.col-sm-6{
+    .make-sm-column(6);
+}
+.col-sm-4{
+  .make-sm-column(4);
+}
+.col-sm-8{
+  .make-sm-column(8);
+}
+.form-group{
+	.form-group();
+}
+.form-group::after{
+  content:"";
+  clear:both;
+  display: block;
+}
+.well{
+    .well();
+}
+.well-msg{
+	padding:10px;
+	margin:10px auto;
+}
+.well-sm{
+	padding: 9px !important;
+	border-radius: 3px !important;
+	margin-top:10px;
+}
+.msg-title,.msg-content{
+	height:600px;
+	padding:0;
+	overflow-y:auto;
+}
+.msg-content{
+	min-height:500px;
+	height:auto;
+	float:left;
+	border-right:1px solid @my-common-border-color;
+}
+hr .gray{
+	.hrCode(#eee);
+}
+.msg-title ul{
+  font-size: 0px;
+  direction:rtl;
+}
+.msg-title li{
+	direction:rtl;
+	text-align:right;
+	color:@my-profile-menu-color;
+	font-size:12px;
+	border-top:1px solid @my-common-border-color;
+	padding: 10px 15px;
+  float: none !important;
+      vertical-align: top;
+      display: inline-block;
+}
+.msg-title a,.msg-content a{
+	color:@my-profile-menu-color;
+	font-size:12px;
+  cursor: pointer;
+}
+.msg-title a:hover,.msg-content a:hover{
+	color:@my-btn-upload;
+}
+.msg-det{
+}
+.msg-det p{
+	padding:3px 0;
+}
+.msg-det img{
+	float:right;
+	margin-left:5px;
+}
+.msg-opt,.msg-date{
+	font-size:10px;
+}
+.msg-opt{
+	float:left;
+	direction:ltr;
+	padding:8px 0;
+}
+.msg-date{
+	float:right;
+	padding:10px 0;
+}
+.msg-opt input{
+	margin-top: 0px;
+	display: block;
+	float: left;
+}
+.msg-opt >* {
+	margin-right:3px;
+}
+.msg-content li{
+	direction:rtl;
+	text-align:right;
+	color:@my-profile-menu-color;
+	font-size:12px;
+	border:1px solid @my-common-border-color;
+	padding: 10px 15px;
+}
+.msg-content .paginator{
+	float:none;
+	width:90%;
+	display:block;
+}
+.msg-content li:first-child{
+	border-top:1px solid @my-common-border-color;
+}
+.msg-sender{
+	margin: 10px;
+	float: right;
+}
+.msg-main p:last-child{
+	text-align: justify;
+	padding:42px 10px 10px 10px;
+	line-height:18px;
+	font-size:14px;
+}
+.msg-main img{
+	float:right;
+}
+.msg-content-date{
+	text-align:left;
+	color:black;
+}
+.msg-content-date a{
+	margin: 0 5px;
+	font-size:14px;
+}
+.msg-content-date input{
+	position:relative;
+	top:2px;
+}
+.msg-form{
+	margin:10px 40px;
+}
+.msg-form textarea{
+	width:100%;
+	margin:auto;
+}
+.msg-form input{
+	margin:10px;
+}
+.profile-content .well-sm{
+	margin : 10px 15px;
+}
+.feed-form{
+	clear:both;
+	padding:16px;
+	float:none !important;
+	margin:10px auto;
+}
+.form-group{
+	.form-group();
+}
+.form-group img{
+	margin: 15px auto;
+  border: 1px solid #e1e1e1;
+  height: 34px;
+  float:right;
+}
+.btn-success{
+	.btn-success();
+	float:left;
+	width: 25% !important;
+  font-size: 14px;
+}
+.msg-content h2,.profile-content h2{
+	text-align: right;
+    padding: 20px;
+    color: #6f7b7e;
+    font-size:14px;
+}
+.feed-form textarea{
+	height:100px;
+	margin: auto;
+}

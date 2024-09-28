@@ -1,0 +1,63 @@
+// out: ./register.css, sourcemap: false, compress: true
+
+@import "./header.less";
+.login-form-wraper{
+  .make-sm-column(7);
+  .make-md-column(7);
+  .make-lg-column(6);
+  margin:30px auto 30px auto;
+  float:none !important;
+  max-width:430px;
+}
+.login-form-wraper img{
+  display:block;
+  margin:0 auto 20px auto;
+}
+.input-group{
+  &:extend(.input-group);
+}
+.margin-bottom-sm{
+  position:relative;
+  right:-3px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  direction:rtl;
+  text-align:right;
+  /* webkit solution */
+  -webkit-input-placeholder { text-align:right; }
+  /* mozilla solution */
+  input:-moz-placeholder { text-align:right; }
+}
+.margin-bottom-sm:focus{
+text-align:left;
+}
+.input-group-addon{
+  &:extend(.input-group-addon);
+}
+.spacer{
+  .hrCode(@main-color);
+}
+.reg-title{
+ text-align:center;
+ direction:rtl;
+ padding:15px;
+}
+.btn-reg{
+  width: 250px;
+  margin: auto;
+  display: block;
+}
+.alert{
+  &:extend(.alert);
+  text-align: justify;
+  direction: rtl;
+  font-size: 12px;
+}
+.alert-danger{
+  &:extend(.alert-danger);
+}
+.alert-success{
+  &:extend(.alert-success);
+}
+#main{
+}

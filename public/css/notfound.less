@@ -1,0 +1,26 @@
+// out: ./notfound.css, sourcemap: false, compress: true
+
+@import "./header.less";
+.container{
+    &:extend(.container);
+}
+.row{
+    &:extend(.row all);
+}
+.col-xs-12{
+	.make-xs-column(12);
+}
+.content{
+	height:500px;
+}
+.p-head{
+  text-align: center;
+  font-size: 50px;
+  padding: 117px 0 30px 0;
+}
+.p-des{
+  direction: rtl;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 80px;
+}

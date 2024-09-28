@@ -1,0 +1,101 @@
+// out: ./search.css, sourcemap: false, compress: true
+
+@import "./../header.less";
+@import "./profile-menu.less";
+@import "./../pagination.less";
+
+.table{
+	&:extend(.table all);
+	font-size:12px;
+}
+.table-bordred{
+	&:extend(.table-bordred all);
+}
+.table-striped{
+	&:extend(.table-striped all);
+}
+.table tr{
+	direction:rtl;
+}
+.table td{
+	direction:rtl;
+	text-align:center;
+}
+.table td:last-child *{
+	float:right;
+}
+.table th:last-child *{
+	float:right;
+}
+.table td a:hover{
+	color:@my-btn-upload;
+}
+.table td a{
+	color:black;
+}
+.trash-ico{
+	&:extend(.glyphicon-trash all);
+}
+.pencil-ico{
+	&:extend(.glyphicon-pencil all);
+}
+.book-ico{
+    &:extend(.glyphicon-book all);
+}
+.video-ico{
+    &:extend(.glyphicon-play-circle all);
+}
+.sound-ico{
+    &:extend(.glyphicon-music all);
+}
+.thumbs-up-ico{
+    &:extend(.glyphicon-thumbs-up all);
+}
+.thumbs-down-ico{
+    &:extend(.glyphicon-thumbs-down all);
+}
+.btn-xs{
+	&:extend(.btn-xs);
+}
+.form-group{
+	.form-group();
+}
+.form-control{
+	.form-control();
+}
+.branch-form{
+	padding:20px;
+	float:right;
+	width:50%;
+	direction:rtl;
+	font-size:12px;
+	@media(max-width:740px)
+	{
+		width:100%;
+	}
+}
+.branch-form h2{
+	text-align:right;
+	padding:20px 0;
+	color:@my-profile-menu-color;
+}
+.well-msg{
+	padding:10px;
+	margin:10px auto;
+}
+.well{
+	margin:5px;
+}
+#edit-branch:hover{
+	cursor:pointer;
+	color:@my-btn-upload;
+}
+.info-icons div{
+	float:right;
+	text-align:right;
+	direction:rtl;
+	font-size:12px;
+	padding:3px 10px;
+	color:#111;
+	line-height: 28px;
+}
